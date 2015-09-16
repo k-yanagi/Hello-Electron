@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app="app">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <!-- CSS -->
+    <link rel="stylesheet" href="bower_components/OnsenUI/build/css/onsenui.css"/>
+    <link rel="stylesheet" href="bower_components/OnsenUI/build/css/onsen-css-components-blue-basic-theme.css"/>
+ 
+    <!-- JavaScript -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/OnsenUI/build/js/onsenui.js"></script>
+ 
+    <title>Electron de OnsenUI</title>
+ 
+    <script>
+        var module = ons.bootstrap('app', ['onsen']);
+        module.controller('AppController', function($scope) { });
+    </script>
+</head>
+ 
+<body ng-controller="AppController">
+ 
+<ons-toolbar>
+    <div class="center">Electron温泉</div>
+</ons-toolbar>
+
+<ons-tabbar>
+    <ons-tab page="home.html" label="Home" icon="ion-home" active="true"></ons-tab>
+    <ons-tab page="comments.html" label="Comments" icon="ion-chatbox-working"></ons-tab>
+    <ons-tab page="tags.html" label="Tags" icon="ion-ios-pricetag"></ons-tab>
+    <ons-tab page="settings.html" label="Settings" icon="ion-ios-cog"></ons-tab>
+</ons-tabbar>
+ 
+<ons-template id="home.html">
+    <ons-toolbar>
+        <div class="center">Home</div>
+    </ons-toolbar>
+ 
+    <p style="padding-top: 100px; color: #999; text-align: center">フロントエンド実装</p>
+</ons-template>
+ 
+<ons-template id="comments.html">
+    <ons-toolbar>
+        <div class="center">Comments</div>
+    </ons-toolbar>
+ 
+    <p style="padding-top: 100px; color: #999; text-align: center">フロントエンド実装</p>
+</ons-template>
+ 
+<ons-template id="tags.html">
+    <ons-toolbar>
+        <div class="center">Tags</div>
+    </ons-toolbar>
+ 
+    <p style="padding-top: 100px; color: #999; text-align: center">フロントエンド実装</p>
+</ons-template>
+ 
+<ons-template id="feed.html">
+    <ons-toolbar>
+        <div class="center">Feed</div>
+    </ons-toolbar>
+ 
+    <p style="padding-top: 100px; color: #999; text-align: center">フロントエンド実装</p>
+</ons-template>
+ 
+<ons-template id="settings.html">
+    <ons-toolbar>
+        <div class="center">Settings</div>
+    </ons-toolbar>
+ 
+    <p style="padding-top: 100px; color: #999; text-align: center">フロントエンド実装</p>
+</ons-template>
+ 
+</body>
+</html>
